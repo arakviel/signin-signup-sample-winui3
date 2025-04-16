@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SignInSignUpSample (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SignInSignUpSample (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

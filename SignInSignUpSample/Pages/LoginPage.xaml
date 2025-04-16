@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="SignInSignUpSample.Pages.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SignInSignUpSample.Pages"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel
+        MaxWidth="400"
+        Padding="32"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Spacing="16">
+        <TextBlock
+            Margin="0,0,0,20"
+            HorizontalAlignment="Center"
+            Style="{StaticResource TitleTextBlockStyle}"
+            Text="Вхід" />
+
+        <TextBox
+            x:Name="UsernameTextBox"
+            Header="Логін"
+            PlaceholderText="Введіть логін" />
+        <TextBlock
+            x:Name="UsernameErrorTextBlock"
+            Foreground="{ThemeResource SystemFillColorCriticalBrush}"
+            Style="{StaticResource CaptionTextBlockStyle}"
+            Visibility="Collapsed" />
+
+        <PasswordBox
+            x:Name="InputPasswordBox"
+            Header="Пароль"
+            PlaceholderText="Введіть пароль" />
+        <TextBlock
+            x:Name="InputPasswordErrorTextBlock"
+            Foreground="{ThemeResource SystemFillColorCriticalBrush}"
+            Style="{StaticResource CaptionTextBlockStyle}"
+            Visibility="Collapsed" />
+
+        <TextBlock
+            x:Name="LoginErrorTextBlock"
+            Foreground="{ThemeResource SystemFillColorCriticalBrush}"
+            Style="{StaticResource CaptionTextBlockStyle}"
+            Text="Невірний логін або пароль"
+            Visibility="Collapsed" />
+
+        <Button
+            x:Name="LoginButton"
+            Margin="0,10,0,0"
+            HorizontalAlignment="Stretch"
+            Click="LoginButton_Click"
+            Content="Увійти" />
+
+        <HyperlinkButton
+            x:Name="RegisterLink"
+            HorizontalAlignment="Center"
+            Click="RegisterLink_Click"
+            Content="Немає облікового запису? Зареєструватися" />
+
+    </StackPanel>
+</Page>

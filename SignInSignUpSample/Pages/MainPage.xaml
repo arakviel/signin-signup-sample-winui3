@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="SignInSignUpSample.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SignInSignUpSample.Pages"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView
+            x:Name="NavView"
+            Header="Головна"
+            IsBackButtonVisible="Collapsed"
+            IsSettingsVisible="False"
+            PaneDisplayMode="Auto"
+            SelectionChanged="NavView_SelectionChanged">
+
+            <NavigationView.MenuItems>
+                <NavigationViewItem
+                    Content="Головна"
+                    Icon="Home"
+                    Tag="home" />
+                <NavigationViewItem
+                    Content="Інформація"
+                    Icon="ContactInfo"
+                    Tag="info" />
+            </NavigationView.MenuItems>
+
+            <NavigationView.FooterMenuItems>
+                <NavigationViewItem
+                    x:Name="ProfileItem"
+                    Content="Профіль"
+                    Icon="Contact"
+                    Tag="profile" />
+                <NavigationViewItem
+                    Content="Вихід"
+                    Icon="LeaveChat"
+                    Tag="logout"
+                    Tapped="LogoutItem_Tapped" />
+            </NavigationView.FooterMenuItems>
+
+            <Frame x:Name="ContentFrame" />
+        </NavigationView>
+    </Grid>
+</Page>
