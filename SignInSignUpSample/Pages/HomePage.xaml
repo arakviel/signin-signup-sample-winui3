@@ -6,14 +6,15 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="using:SignInSignUpSample.Pages"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:l="using:WinUI3Localizer"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     mc:Ignorable="d">
 
     <Grid>
         <InfoBar
-            Title="Інформація"
+            x:Name="WelcomeInfoBar"
+            l:Uids.Uid="HomePage_WelcomeInfoBar"
             IsOpen="True"
-            Message="Ви успішно увійшли в систему!"
             Severity="Success" />
     </Grid>
 </Page>

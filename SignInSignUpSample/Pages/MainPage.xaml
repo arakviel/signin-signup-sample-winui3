@@ -4,24 +4,27 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:SignInSignUpSample.Pages"
+    xmlns:l="using:WinUI3Localizer"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
         <NavigationView
             x:Name="NavView"
-            Header="Головна"
+            l:Uids.Uid="MainPage_NavView"
             IsBackButtonVisible="Collapsed"
-            IsSettingsVisible="False"
+            IsSettingsVisible="True"
             PaneDisplayMode="Auto"
             SelectionChanged="NavView_SelectionChanged">
 
             <NavigationView.MenuItems>
                 <NavigationViewItem
-                    Content="Головна"
+                    x:Name="HomeItem"
+                    l:Uids.Uid="MainPage_HomeItem"
                     Icon="Home"
                     Tag="home" />
                 <NavigationViewItem
-                    Content="Інформація"
+                    x:Name="InfoItem"
+                    l:Uids.Uid="MainPage_InfoItem"
                     Icon="ContactInfo"
                     Tag="info" />
             </NavigationView.MenuItems>
@@ -29,11 +32,12 @@
             <NavigationView.FooterMenuItems>
                 <NavigationViewItem
                     x:Name="ProfileItem"
-                    Content="Профіль"
+                    l:Uids.Uid="MainPage_ProfileItem"
                     Icon="Contact"
                     Tag="profile" />
                 <NavigationViewItem
-                    Content="Вихід"
+                    x:Name="LogoutItem"
+                    l:Uids.Uid="MainPage_LogoutItem"
                     Icon="LeaveChat"
                     Tag="logout"
                     Tapped="LogoutItem_Tapped" />

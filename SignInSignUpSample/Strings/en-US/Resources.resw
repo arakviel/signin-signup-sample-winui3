@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <!-- General -->
+  <data name="MainWindow.Title" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <!-- Navigation -->
+  <data name="MainPage_NavView.Header" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="MainPage_HomeItem.Content" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="MainPage_InfoItem.Content" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="MainPage_ProfileItem.Content" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="MainPage_LogoutItem.Content" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <!-- Login Page -->
+  <data name="LoginPage_TitleText.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginPage_UsernameTextBox.Header" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="LoginPage_UsernameTextBox.PlaceholderText" xml:space="preserve">
+    <value>Enter username</value>
+  </data>
+  <data name="LoginPage_InputPasswordBox.Header" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="LoginPage_InputPasswordBox.PlaceholderText" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+  <data name="LoginPage_LoginButton.Content" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginPage_RegisterLink.Content" xml:space="preserve">
+    <value>Don't have an account? Register</value>
+  </data>
+  <!-- Register Page -->
+  <data name="RegisterPage_TitleText.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="RegisterPage_UsernameTextBox.Header" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="RegisterPage_UsernameTextBox.PlaceholderText" xml:space="preserve">
+    <value>Enter username</value>
+  </data>
+  <data name="RegisterPage_EmailTextBox.Header" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="RegisterPage_EmailTextBox.PlaceholderText" xml:space="preserve">
+    <value>Enter email</value>
+  </data>
+  <data name="RegisterPage_FullNameTextBox.Header" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="RegisterPage_FullNameTextBox.PlaceholderText" xml:space="preserve">
+    <value>Enter full name</value>
+  </data>
+  <data name="RegisterPage_InputPasswordBox.Header" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="RegisterPage_InputPasswordBox.PlaceholderText" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+  <data name="RegisterPage_ConfirmPasswordBox.Header" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="RegisterPage_ConfirmPasswordBox.PlaceholderText" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="RegisterPage_RegisterButton.Content" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="RegisterPage_LoginLink.Content" xml:space="preserve">
+    <value>Already have an account? Login</value>
+  </data>
+  <!-- Profile Page -->
+  <data name="ProfilePage_TitleText.Text" xml:space="preserve">
+    <value>Profile Information</value>
+  </data>
+  <data name="ProfilePage_UsernameLabel.Text" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="ProfilePage_EmailLabel.Text" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="ProfilePage_FullNameLabel.Text" xml:space="preserve">
+    <value>Full Name:</value>
+  </data>
+  <!-- Settings Page -->
+  <data name="SettingsPage_TitleText.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SettingsPage_LanguageLabel.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="SettingsPage_ThemeLabel.Text" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="SettingsPage_ThemeLightRadio.Content" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="SettingsPage_ThemeDarkRadio.Content" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="SettingsPage_ThemeSystemRadio.Content" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="SettingsPage_ThemeChanged.Title" xml:space="preserve">
+    <value>Theme Changed</value>
+  </data>
+  <data name="SettingsPage_ThemeChanged.Content" xml:space="preserve">
+    <value>Interface theme has been successfully changed</value>
+  </data>
+  <data name="SettingsPage_LanguageUkrainianRadio.Content" xml:space="preserve">
+    <value>Ukrainian</value>
+  </data>
+  <data name="SettingsPage_LanguageEnglishRadio.Content" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="SettingsPage_SuccessInfoBar.Title" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="SettingsPage_SuccessInfoBar.Message" xml:space="preserve">
+    <value>Interface language has been successfully changed</value>
+  </data>
+
+  <data name="SettingsPage_ThemeInfoBar.Title" xml:space="preserve">
+    <value>Theme Change</value>
+  </data>
+  <data name="SettingsPage_ThemeInfoBar.Message" xml:space="preserve">
+    <value>To fully apply the theme, you need to restart the application</value>
+  </data>
+  <data name="SettingsPage_ThemeRestartButton.Content" xml:space="preserve">
+    <value>Restart Now</value>
+  </data>
+
+  <!-- Login Page -->
+  <data name="LoginPage_TitleText.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginPage_UsernameTextBox.Header" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="LoginPage_UsernameTextBox.PlaceholderText" xml:space="preserve">
+    <value>Enter username</value>
+  </data>
+  <data name="LoginPage_InputPasswordBox.Header" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="LoginPage_InputPasswordBox.PlaceholderText" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+  <data name="LoginPage_LoginButton.Content" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginPage_RegisterLink.Content" xml:space="preserve">
+    <value>Don't have an account? Register</value>
+  </data>
+  <data name="LoginPage_LoginErrorTextBlock.Text" xml:space="preserve">
+    <value>Invalid username or password</value>
+  </data>
+
+  <!-- Register Page -->
+  <data name="RegisterPage_TitleText.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="RegisterPage_UsernameTextBox.Header" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="RegisterPage_UsernameTextBox.PlaceholderText" xml:space="preserve">
+    <value>Enter username</value>
+  </data>
+  <data name="RegisterPage_EmailTextBox.Header" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="RegisterPage_EmailTextBox.PlaceholderText" xml:space="preserve">
+    <value>Enter email</value>
+  </data>
+  <data name="RegisterPage_FullNameTextBox.Header" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="RegisterPage_FullNameTextBox.PlaceholderText" xml:space="preserve">
+    <value>Enter full name</value>
+  </data>
+  <data name="RegisterPage_InputPasswordBox.Header" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="RegisterPage_InputPasswordBox.PlaceholderText" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+  <data name="RegisterPage_ConfirmPasswordBox.Header" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="RegisterPage_ConfirmPasswordBox.PlaceholderText" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="RegisterPage_RegisterButton.Content" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="RegisterPage_LoginLink.Content" xml:space="preserve">
+    <value>Already have an account? Login</value>
+  </data>
+  <data name="RegisterPage_RegisterErrorTextBlock.Text" xml:space="preserve">
+    <value>User with this username already exists</value>
+  </data>
+
+  <!-- Profile Page -->
+  <data name="ProfilePage_TitleText.Text" xml:space="preserve">
+    <value>Profile Information</value>
+  </data>
+  <data name="ProfilePage_UsernameLabel.Text" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="ProfilePage_EmailLabel.Text" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="ProfilePage_FullNameLabel.Text" xml:space="preserve">
+    <value>Full Name:</value>
+  </data>
+
+  <!-- Info Page -->
+  <data name="InfoPage_TitleText.Text" xml:space="preserve">
+    <value>Information</value>
+  </data>
+
+  <!-- Home Page -->
+  <data name="HomePage_WelcomeInfoBar.Title" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="HomePage_WelcomeInfoBar.Message" xml:space="preserve">
+    <value>You have successfully logged in!</value>
+  </data>
+</root>

@@ -20,7 +20,21 @@
     <None Remove="Pages\ProfilePage.xaml" />
     <None Remove="Pages\RegisterPage.xaml" />
     <None Remove="Pages\SettingsPage.xaml" />
+    <None Remove="Strings\en-US\Resources.resw" />
+    <None Remove="Strings\uk-UA\Resources.resw" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+    <PRIResource Include="Strings\uk-UA\Resources.resw" />
+  </ItemGroup>
+
+	<!-- Copy all "Resources.resw" files in the "Strings" folder to the output folder. -->
+	<ItemGroup>
+		<Content Include="Strings\**\*.resw">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -47,6 +61,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250401001" />
+    <PackageReference Include="WinUI3Localizer" Version="2.2.0" />
   </ItemGroup>
   <ItemGroup>
     <Page Update="Pages\SettingsPage.xaml">

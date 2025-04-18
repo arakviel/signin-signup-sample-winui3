@@ -1,6 +1,5 @@
 using Microsoft.UI.Xaml.Controls;
-
-
+using Microsoft.UI.Xaml.Navigation;
 
 namespace SignInSignUpSample.Pages;
 public sealed partial class ProfilePage : Page
@@ -9,6 +8,14 @@ public sealed partial class ProfilePage : Page
     {
         InitializeComponent();
         LoadUserData();
+
+        // Ініціалізація теми
+        //ThemeHelper.Initialize(this);
+    }
+
+    protected override void OnNavigatedFrom(NavigationEventArgs e)
+    {
+        base.OnNavigatedFrom(e);
     }
 
     private void LoadUserData()

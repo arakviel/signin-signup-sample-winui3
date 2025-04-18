@@ -4,6 +4,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:SignInSignUpSample.Pages"
+    xmlns:l="using:WinUI3Localizer"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
@@ -13,15 +14,15 @@
             VerticalAlignment="Center"
             Spacing="16">
             <TextBlock
+                x:Name="TitleText"
+                l:Uids.Uid="RegisterPage_TitleText"
                 Margin="0,0,0,20"
                 HorizontalAlignment="Center"
-                Style="{StaticResource TitleTextBlockStyle}"
-                Text="Реєстрація" />
+                Style="{StaticResource TitleTextBlockStyle}" />
 
             <TextBox
                 x:Name="UsernameTextBox"
-                Header="Логін"
-                PlaceholderText="Введіть логін" />
+                l:Uids.Uid="RegisterPage_UsernameTextBox" />
             <TextBlock
                 x:Name="UsernameErrorTextBlock"
                 Foreground="{ThemeResource SystemFillColorCriticalBrush}"
@@ -30,8 +31,7 @@
 
             <TextBox
                 x:Name="EmailTextBox"
-                Header="Email"
-                PlaceholderText="Введіть email" />
+                l:Uids.Uid="RegisterPage_EmailTextBox" />
             <TextBlock
                 x:Name="EmailErrorTextBlock"
                 Foreground="{ThemeResource SystemFillColorCriticalBrush}"
@@ -40,8 +40,7 @@
 
             <TextBox
                 x:Name="FullNameTextBox"
-                Header="Повне ім'я"
-                PlaceholderText="Введіть повне ім'я" />
+                l:Uids.Uid="RegisterPage_FullNameTextBox" />
             <TextBlock
                 x:Name="FullNameErrorTextBlock"
                 Foreground="{ThemeResource SystemFillColorCriticalBrush}"
@@ -50,8 +49,7 @@
 
             <PasswordBox
                 x:Name="InputPasswordBox"
-                Header="Пароль"
-                PlaceholderText="Введіть пароль" />
+                l:Uids.Uid="RegisterPage_InputPasswordBox" />
             <TextBlock
                 x:Name="InputPasswordErrorTextBlock"
                 Foreground="{ThemeResource SystemFillColorCriticalBrush}"
@@ -60,8 +58,7 @@
 
             <PasswordBox
                 x:Name="ConfirmPasswordBox"
-                Header="Підтвердження пароля"
-                PlaceholderText="Підтвердіть пароль" />
+                l:Uids.Uid="RegisterPage_ConfirmPasswordBox" />
             <TextBlock
                 x:Name="ConfirmPasswordErrorTextBlock"
                 Foreground="{ThemeResource SystemFillColorCriticalBrush}"
@@ -70,23 +67,23 @@
 
             <TextBlock
                 x:Name="RegisterErrorTextBlock"
+                l:Uids.Uid="RegisterPage_RegisterErrorTextBlock"
                 Foreground="{ThemeResource SystemFillColorCriticalBrush}"
                 Style="{StaticResource CaptionTextBlockStyle}"
-                Text="Користувач з таким логіном вже існує"
                 Visibility="Collapsed" />
 
             <Button
                 x:Name="RegisterButton"
+                l:Uids.Uid="RegisterPage_RegisterButton"
                 Margin="0,10,0,0"
                 HorizontalAlignment="Stretch"
-                Click="RegisterButton_Click"
-                Content="Зареєструватися" />
+                Click="RegisterButton_Click" />
 
             <HyperlinkButton
                 x:Name="LoginLink"
+                l:Uids.Uid="RegisterPage_LoginLink"
                 HorizontalAlignment="Center"
-                Click="LoginLink_Click"
-                Content="Вже маєте обліковий запис? Увійти" />
+                Click="LoginLink_Click" />
 
         </StackPanel>
     </Grid>

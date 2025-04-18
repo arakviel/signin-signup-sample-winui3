@@ -3,13 +3,65 @@
     x:Class="SignInSignUpSample.Pages.SettingsPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:l="using:WinUI3Localizer"
     xmlns:local="using:SignInSignUpSample.Pages"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-    mc:Ignorable="d">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock Text="Тут будуть налаштування" />
+    <Grid Padding="32">
+        <StackPanel Spacing="16">
+            <TextBlock
+                x:Name="TitleText"
+                l:Uids.Uid="SettingsPage_TitleText"
+                Style="{StaticResource TitleTextBlockStyle}" />
+
+            <StackPanel Spacing="8">
+                <TextBlock
+                    x:Name="ThemeLabel"
+                    l:Uids.Uid="SettingsPage_ThemeLabel"
+                    Style="{StaticResource SubtitleTextBlockStyle}" />
+
+                <RadioButtons x:Name="ThemeRadioButtons" SelectionChanged="ThemeRadioButtons_SelectionChanged">
+                    <RadioButton
+                        x:Name="ThemeLightRadio"
+                        l:Uids.Uid="SettingsPage_ThemeLightRadio"
+                        Tag="Light" />
+                    <RadioButton
+                        x:Name="ThemeDarkRadio"
+                        l:Uids.Uid="SettingsPage_ThemeDarkRadio"
+                        Tag="Dark" />
+                    <RadioButton
+                        x:Name="ThemeSystemRadio"
+                        l:Uids.Uid="SettingsPage_ThemeSystemRadio"
+                        Tag="Default" />
+                </RadioButtons>
+            </StackPanel>
+
+            <StackPanel Spacing="8">
+                <TextBlock
+                    x:Name="LanguageLabel"
+                    l:Uids.Uid="SettingsPage_LanguageLabel"
+                    Style="{StaticResource SubtitleTextBlockStyle}" />
+
+                <RadioButtons x:Name="LanguageRadioButtons" SelectionChanged="LanguageRadioButtons_SelectionChanged">
+                    <RadioButton
+                        x:Name="LanguageUkrainianRadio"
+                        l:Uids.Uid="SettingsPage_LanguageUkrainianRadio"
+                        Tag="uk-UA" />
+                    <RadioButton
+                        x:Name="LanguageEnglishRadio"
+                        l:Uids.Uid="SettingsPage_LanguageEnglishRadio"
+                        Tag="en-US" />
+                </RadioButtons>
+            </StackPanel>
+
+            <InfoBar
+                x:Name="SuccessInfoBar"
+                l:Uids.Uid="SettingsPage_SuccessInfoBar"
+                IsClosable="True"
+                IsOpen="False"
+                Severity="Success" />
+
+
+        </StackPanel>
     </Grid>
 </Page>

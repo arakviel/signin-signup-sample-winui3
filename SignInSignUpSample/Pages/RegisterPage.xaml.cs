@@ -10,6 +10,9 @@ public sealed partial class RegisterPage : Page
     public RegisterPage()
     {
         this.InitializeComponent();
+
+        // Ініціалізація теми
+        //ThemeHelper.Initialize(this);
     }
 
     private void RegisterButton_Click(object sender, RoutedEventArgs e)
